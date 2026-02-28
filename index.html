@@ -527,6 +527,60 @@
       color: var(--text-secondary);
     }
 
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .project-row {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      background: #111827;
+      padding: 40px;
+      border-radius: 16px;
+      transition: 0.3s ease;
+    }
+
+    .project-row:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .project-image img {
+      width: 420px;
+      border-radius: 12px;
+    }
+
+    .project-content {
+      flex: 1;
+    }
+
+    .project-short {
+      margin: 15px 0;
+      color: #9ca3af;
+    }
+
+    .project-highlights {
+      margin: 15px 0;
+      padding-left: 18px;
+    }
+
+    .project-highlights li {
+      margin-bottom: 8px;
+      color: #d1d5db;
+    }
+
+    .project-tech span {
+      display: inline-block;
+      background: #1f2937;
+      padding: 6px 12px;
+      margin: 5px 8px 0 0;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
     /* === EDUCATION === */
     .education { padding-top: 120px; padding-bottom: 120px; }
 
@@ -875,17 +929,6 @@
         <div class="timeline-role">Full Stack Developer</div>
         <div class="timeline-company">GVM Technologies LLP</div>
         <ul class="timeline-points">
-          <li>Currently working on the VDB (Virtual Diamond Boutique) project — building and maintaining full-stack features in Ruby on Rails</li>
-          <li>Developing scalable web applications and integrations for the diamond industry platform</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item fade-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">February 2022 — July 2024</div>
-        <div class="timeline-role">Software Engineer</div>
-        <div class="timeline-company">GVM Technologies LLP</div>
-        <ul class="timeline-points">
           <li> Worked as a Full Stack Engineer building scalable web applications using Ruby on Rails and modern JavaScript frameworks.</li>
           <li> Designed and developed RESTful APIs to support frontend features and third-party integrations. </li>
           <li> Built responsive and dynamic user interfaces using React/JavaScript, ensuring smooth user experience. </li>
@@ -903,8 +946,8 @@
 
       <div class="timeline-item fade-in">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">December 2021 — February 2022</div>
-        <div class="timeline-role">Intern</div>
+        <div class="timeline-date">February 2022 — July 2024</div>
+        <div class="timeline-role">Software Engineer</div>
         <div class="timeline-company">GVM Technologies LLP</div>
         <ul class="timeline-points">
           <li> Developed and maintained backend systems using Ruby on Rails following MVC architecture. </li>
@@ -924,9 +967,9 @@
 
       <div class="timeline-item fade-in">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">February 2021 — June 2021</div>
-        <div class="timeline-role">Full Stack Developer Intern</div>
-        <div class="timeline-company">Kohli Media LLP</div>
+        <div class="timeline-date">December 2021 — February 2022</div>
+        <div class="timeline-role">Intern</div>
+        <div class="timeline-company">GVM Technologies LLP</div>
         <ul class="timeline-points">
           <li> Assisted in developing backend features using Ruby on Rails. </li>
           <li> Fixed bugs and supported feature enhancements under senior guidance. </li>
@@ -935,51 +978,112 @@
         </ul>
       </div>
 
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">February 2021 — June 2021</div>
+        <div class="timeline-role">Full Stack Developer Intern</div>
+        <div class="timeline-company">Kohli Media LLP</div>
+        <ul class="timeline-points">
+          <li> Worked as a Full Stack Developer Intern using PHP to build and maintain dynamic web applications. </li>
+          <li> Assisted in developing backend modules, handling database operations (MySQL), and implementing business logic. </li>
+          <li> Contributed to frontend development using HTML, CSS, JavaScript, and Bootstrap for responsive UI. </li>
+          <li> Supported bug fixing, feature enhancements, and basic deployment activities under senior guidance. </li>
+          <li> Gained hands-on experience with version control (Git) and real-world Agile development workflows. </li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <div class="projects-bg">
-    <div class="projects-section" id="projects">
-      <div class="fade-in">
-        <div class="section-label">Projects</div>
-        <h2 class="section-title">Featured work</h2>
-        <p class="section-subtitle">Product-based platforms and full-stack applications built to solve real-world problems. </p>
+  <div class="projects-list">
+
+    <!-- PROJECT 1 -->
+    <div class="project-row fade-in">
+      <div class="project-image">
+        <img src="images/vdb-preview.jpg" alt="VDB Project Preview">
       </div>
-      <div class="projects-grid">
-        <div class="project-card fade-in">
-          <div class="project-year">June 2022 — Present · Currently working on</div>
-          <h3>VDB — Virtual Diamond Boutique</h3>
-          <p>Contributing to a B2B diamond trading marketplace enabling suppliers and retailers to buy, memo, and hold diamonds online through a scalable Ruby on Rails platform.Enhanced the VDB Inventory Management System, supporting seamless interaction between 100+ suppliers and retailers with real-time inventory visibility.Implemented advanced features like Linked Pairs, improving diamond pairing accuracy and boosting buyer engagement.Developed and optimized Send-a-Quote and Memo workflows, reducing manual coordination efforts by ~30% and accelerating transaction cycles.Led the Request Page redesign, improving user experience and increasing inquiry conversion rates by 20%+.Integrated multiple third-party APIs for real-time diamond inventory synchronization, efficiently managing thousands of product records.Automated inventory sync processes, reducing data inconsistencies by approximately 40%.Customized and extended Active Admin dashboards to streamline internal operations and reporting efficiency.Integrated Shopify with Rails backend, enabling automated product publishing and e-commerce storefront connectivity.Currently working with Zenskar (third-party billing platform) to implement a Paid Marketplace Subscription Model, enabling subscription-based access for suppliers and retailers.Contributed to subscription lifecycle management including plan configuration, billing automation, webhook handling, and payment status synchronization.Improved backend performance through query optimization and background job processing, reducing API response time by 25%.Actively involved in CI/CD processes, deployment management, and ensuring scalable, production-ready releases in Agile sprints.</p>
-          <div class="project-tech">
-            <span>Ruby on Rails</span>
-            <span>PostgreSQL</span>
-            <span>ElasticSearch</span>
-            <span>Shopify</span>
-            <span>Active Admin</span>
-          </div>
-        </div>
-        <div class="project-card fade-in">
-          <div class="project-year">January 2025 — March 2025</div>
-          <h3>AGODA Clone — Booking Hotels</h3>
-          <p>Contributed to the development of a customer-facing hotel booking platform enabling property owners to list hotels and travelers to search, compare, and book accommodations seamlessly.Designed and implemented core booking functionalities, ensuring smooth property discovery and reservation workflows.Developed a Favorites feature, allowing users to save preferred properties and improving user retention and repeat visits.Implemented an existing ratings and reviews system, enhancing transparency and helping travelers make informed decisions.Built and optimized the real-time availability and booking module, reducing booking conflicts and improving system reliability.Focused on performance optimization and database efficiency to ensure fast search and booking responses.Collaborated in Agile sprints to deliver scalable and user-friendly features aligned with business goals.</p>
-          <div class="project-tech">
-            <span>Rails</span>
-            <span>PostgreSQL</span>
-          </div>
-        </div>
-        <div class="project-card fade-in">
-          <div class="project-year">January 2024 — May 2024</div>
-          <h3>GBA Ecommerce — BookStore</h3>
-          <p>Developed a full-featured E-commerce Bookstore platform designed to streamline online book sales with dedicated admin and customer panels.Built a secure and scalable system enabling customers to browse, filter, and purchase books seamlessly.Implemented advanced product filtering and search functionality, improving product discoverability and user experience.Designed and managed Stock Management and Order Management modules, ensuring accurate inventory tracking and efficient order processing.Integrated Stripe Payment Gateway for secure, real-time online transactions and payment confirmation handling.Leveraged Turbo Streams (Hotwire) to deliver dynamic, real-time UI updates without full page reloads, enhancing performance and responsiveness.Developed role-based access control for admins to manage products, pricing, and orders efficiently.Optimized database queries and backend workflows to ensure smooth checkout and order lifecycle management.Focused on clean architecture, maintainable code, and secure payment handling practices.</p>
-          <div class="project-tech">
-            <span>Rails</span>
-            <span>Turbo</span>
-            <span>Stripe</span>
-          </div>
+
+      <div class="project-content">
+        <div class="project-year">June 2022 — Present · Currently working on</div>
+        <h3>VDB — Virtual Diamond Boutique</h3>
+
+        <p class="project-short">
+          B2B diamond trading marketplace enabling suppliers and retailers to buy, memo, and hold diamonds online.
+        </p>
+
+        <ul class="project-highlights">
+          <li>Integrated VDB Inventory System (100+ suppliers)</li>
+          <li>Reduced API response time by 25%</li>
+          <li>Implemented Subscription Model via Zenskar</li>
+        </ul>
+
+        <div class="project-tech">
+          <span>Ruby on Rails</span>
+          <span>PostgreSQL</span>
+          <span>ElasticSearch</span>
+          <span>Shopify</span>
         </div>
       </div>
     </div>
+
+
+    <!-- PROJECT 2 -->
+    <div class="project-row fade-in">
+      <div class="project-image">
+        <img src="images/agoda-preview.jpg" alt="Agoda Clone Preview">
+      </div>
+
+      <div class="project-content">
+        <div class="project-year">January 2025 — March 2025</div>
+        <h3>AGODA Clone — Booking Hotels</h3>
+
+        <p class="project-short">
+          Customer-facing hotel booking platform with property listing and real-time reservations.
+        </p>
+
+        <ul class="project-highlights">
+          <li>Built real-time availability & booking module</li>
+          <li>Implemented ratings & favorites system</li>
+          <li>Optimized DB performance for fast search</li>
+        </ul>
+
+        <div class="project-tech">
+          <span>Rails</span>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PROJECT 3 -->
+    <div class="project-row fade-in">
+      <div class="project-image">
+        <img src="images/bookstore-preview.jpg" alt="Bookstore Preview">
+      </div>
+
+      <div class="project-content">
+        <div class="project-year">January 2024 — May 2024</div>
+        <h3>GBA Ecommerce — BookStore</h3>
+
+        <p class="project-short">
+          Full-featured e-commerce bookstore with admin panel and secure Stripe payments.
+        </p>
+
+        <ul class="project-highlights">
+          <li>Stock & Order Management system</li>
+          <li>Stripe payment integration</li>
+          <li>Turbo Streams for real-time UI updates</li>
+        </ul>
+
+        <div class="project-tech">
+          <span>Rails</span>
+          <span>Turbo</span>
+          <span>Stripe</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- EDUCATION -->
